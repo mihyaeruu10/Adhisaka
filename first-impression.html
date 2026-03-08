@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang='id'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>First Impression - Adhisaka</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div class='first-impression-close'>
+        <a href='first-impression-gallery.html' class='close-btn'>← Kembali ke Gallery</a>
+    </div>
+    <article class='first-impression-article'>
+        <header class='first-impression-header'>
+            <h1>First Impression</h1>
+            <p class='first-impression-subtitle' id='fi-subtitle'>Kesan awal tentang Adhisaka</p>
+        </header>
+        <div class='first-impression-content' id='fi-content'>
+            <!-- Content injected by JavaScript -->
+        </div>
+    </article>
+    <footer class='first-impression-footer'>
+        <p> 2024 Adhisaka Appreciation</p>
+    </footer>
+
+    <script>
+        // ─── Per-character content ───────────────────────────────────────────────
+        const impressions = {
+            1: {
+                subtitle: 'Kesan awal tentang Adhisaka — dari Gwenneth',
+                sections: [
+                    {
+                        heading: 'Pertama Kali Kenal',
+                        paragraphs: [
+                            'Ya ini si saka, udh keliatan sih dari awal ngeselin dan plengernya hehe.. ini org narsis batcuk, dikit dikit @ usernyasendiri MENTANG MENTANG USERNYA CAKEP (y gw mengakui). sipaling aktif di heartiez cuk selalu on tiap detik jir, sipaling peduli sm orang lain, nyuruh nyuruh tidur SENDIRINYA MALAS? giliran org lain dia suruh tidur trs klo dijawab \'malas\' pasti ntar dia nanya kenapainiitublabalbalabalbalabal! tapi ya dia baik kok, asik, friendly.. 🥱'
+                        ]
+                    }
+                ],
+                quote: '\'Dari awal udah keliatan ngeselin dan plenger hehe. Tapi orangnya asik, friendly, dan peduli juga.\'',
+                signature: 'Gwen'
+            },
+            2: {
+                subtitle: 'Kesan awal tentang Adhisaka — dari Cheyrish',
+                sections: [
+                    {
+                        heading: 'Pertama Kali Kenal',
+                        paragraphs: [
+                            'Fi dari Chey ke Adhisaka/saka! awalnya tuh gw kenal dia dari cc terus si saka ni dari keliatannya kaya nonchalant terus nimb pas di tag or lagi main aja, TERNYATA ENGGA…saka ternyata se care itu sama semua orang yang ada di sekitarannya. saka tuh bener” se yapping itu?? and dia juga ngeselin banget, but he’s a good listener for me and everyone, that’s why he’s become my go-to comfort whenever all things get chaotic. top 1 orang ter aktif di heartiez..? si saka sering bgt mention @ dia?? lu ngapain sih gw tanya!(ya tapi usn lu emg cakep) awalnya gw mikir kalau kt gabakalan bisa deket atau ga kek cuman sekedar temen, but.. sangka siapa gw sama dia bisa ceesan?.., he matches my energy so well. that’s why I feel comfortable sharing everything with him.⭐ , literally dia lah my besti vidcu! kadang kalau ga vidcu sama saka tuh kek kurang gitu, karena dia beneran suka bgt nagih gw vidcu ???? being around him feels loud, messy, and fun — but in the best way possible.May you always stay healthy and live a long life, Adhisaka. 🎶.'
+                        ]
+                    }
+                ],
+                quote: '\'lele jelek, jangan makan lele lg tapi keknya lele enak.\'',
+                signature: 'Cheyrish'
+            },
+            3: {
+                subtitle: 'Kesan awal tentang Adhisaka — dari Selatan',
+                sections: [
+                    {
+                        heading: 'Pertama Kali Kenal',
+                        paragraphs: [
+                            'Jujur sampe sekarang gua belom punya nama panggilan yang cocok buat ni orang, apa gua panggil plenger aja ya? Tapi takut diamukin guaa, nanti gua gaada temen lagi 🥺. Awal kenal keliatan asik trs lama kelamaan ngobrol ternyata SEASIK ITU NJR, bahkan ni orang kayaknya bisa jadi bahan bully an gue WHEHEHHE 🥵🥵🥵 bercanda ya bang, ni orang kalo gabut kayaknya emang suka deskripsiin orang ye? Sering sering gabut dong soalnya gua pelanggan setia lu, akan gua temani kegabutan ku dengan sepenuh hati 🤯🥵❤️. Jadi temen gua terus woi jamet, selamanya gapapa soalnya elu plenger 😎❤️.'
+                        ]
+                    }
+                ],
+                quote: '\'W sk ayam geprek,Tp lele enak.\'',
+                signature: 'Selatan'
+            },
+            4: {
+                subtitle: 'Kesan awal tentang Adhisaka — dari Reign',
+                sections: [
+                    {
+                        heading: 'Pertama Kali Kenal',
+                        paragraphs: [
+                            'ily my bb.'
+                        ]
+                    }
+                ],
+                quote: '\'Kesan pertama Reign : gua ganteng.\'',
+                signature: 'Reign'
+            }
+        };
+
+        // ─── Read URL param ──────────────────────────────────────────────────────
+        const params = new URLSearchParams(window.location.search);
+        const personId = parseInt(params.get('person')) || 1;
+        const data = impressions[personId] || impressions[1];
+
+        // ─── Inject subtitle ─────────────────────────────────────────────────────
+        document.getElementById('fi-subtitle').textContent = data.subtitle;
+
+        // ─── Build content HTML ──────────────────────────────────────────────────
+        let html = '';
+        data.sections.forEach(section => {
+            html += `<section class='impression-block'>`;
+            if (section.heading) {
+                html += `<h2>${section.heading}</h2>`;
+            }
+            section.paragraphs.forEach(p => {
+                html += `<p>${p}</p>`;
+            });
+            html += `</section>`;
+        });
+
+        html += `
+            <div class='impression-closing'>
+                <p class='closing-quote'>${data.quote}</p>
+                <p class='closing-signature'>${data.signature}</p>
+            </div>`;
+
+        document.getElementById('fi-content').innerHTML = html;
+    </script>
+</body>
+
+</html>

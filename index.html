@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhisaka</title>
+    <meta name="description" content="Halaman apresiasi untuk Adhisaka.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Transition Overlay -->
+    <div id="transition-overlay" class="transition-overlay"></div>
+
+    <!-- Flappy Saka -->
+    <div id="flappy-saka-container" class="flappy-saka-container">
+        <img src="assets/flappy-saka.png" alt="Flappy Saka" id="flappy-saka" class="flappy-saka">
+        <span id="apsh-text" class="apsh-text">apsh</span>
+    </div>
+
+    <!-- Flying Food 1: Kopi Butterscotch -->
+    <div class="flying-food flying-food-1">
+        <img src="assets/kopi-butterscotch.png" alt="Kopi Butterscotch" class="food-item" data-food="kopi">
+        <span class="food-text">duhh butterscotch gua slurp</span>
+    </div>
+
+    <!-- Flying Food 2: Ayam Geprek -->
+    <div class="flying-food flying-food-2">
+        <img src="assets/ayam-geprek.png" alt="Ayam Geprek" class="food-item" data-food="ayam">
+        <span class="food-text">makan ayam geprek biar hidup</span>
+    </div>
+
+    <!-- Flying Food 3: Pecel Lele -->
+    <div class="flying-food flying-food-3">
+        <img src="assets/pecel-lele.png" alt="Pecel Lele" class="food-item" data-food="lele">
+        <span class="food-text">lele jelek, jangan makan lele lg tapi keknya lele enak</span>
+    </div>
+
+    <!-- Flying Food 4: Gwen Latte -->
+    <div class="flying-food flying-food-4">
+        <img src="assets/gwen-latte.png" alt="Gwen Latte" class="food-item" data-food="gwen">
+        <span class="food-text">gwen latte</span>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">
+                    Adhi<span id="saka-click" class="saka-clickable">saka</span>
+                </h1>
+                <p class="hero-subtitle animate-slide-up">biasanya dipanggil Saka</p>
+                <button id="lets-see-btn" class="lets-see-btn animate-slide-up">Let's see</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

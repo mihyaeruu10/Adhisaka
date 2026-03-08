@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhisaka - The Dry Text Legend</title>
+    <meta name="description" content="Halaman apresiasi untuk Adhisaka. Dry text, tapi selalu ada.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Modal Container -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button id="modal-close" class="modal-close">Oke</button>
+        </div>
+    </div>
+
+    <!-- Kepiting Mode Overlay -->
+    <div id="kepiting-overlay" class="kepiting-overlay">
+        <div class="kepiting-content">
+            <span class="kepiting-emoji">🦀</span>
+            <h2>MODE KEPITING AKTIF</h2>
+            <p>Maju dikit<br>Mundur dikit<br>Tapi nggak pergi.</p>
+        </div>
+    </div>
+
+    <!-- Final Troll Overlay -->
+    <div id="final-overlay" class="final-overlay">
+        <div class="final-content">
+            <p class="final-text" id="final-text-1">Tenang.</p>
+            <p class="final-text" id="final-text-2">Saka ada.</p>
+            <p class="final-text" id="final-text-3">Walau chat-nya kering.</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Adhisaka</a>
+
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#about" class="navbar-link">Tentang Saka</a></li>
+                <li><a href="#funfacts" class="navbar-link">Fun Fact Saka</a></li>
+                <li><a href="#music" class="navbar-link">Top 5 Anjay Saka</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Content Header -->
+        <section class="section content-header">
+            <div class="container animate-fade-in">
+                <h1>Tentang Saka</h1>
+                <p class="hero-subtitle">Biasa aja, tapi selalu ada.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">Tentang</h2>
+                <div class="about-content-wrapper">
+                    <div class="about-content animate-on-scroll">
+                        <div class="about-highlight">
+                            <span class="accent-mark"></span>
+                            <h3>Orang Baik yang Natural</h3>
+                        </div>
+                        <p>
+                            Saka itu orang baik. Bukan baik yang lebay atau yang suka pamer.
+                            Baik yang natural, yang kelihatan dari hal-hal kecil.
+                        </p>
+
+                        <div class="about-highlight">
+                            <span class="accent-mark"></span>
+                            <h3>Caring Tanpa Basa-Basi</h3>
+                        </div>
+                        <p>
+                            Dia caring. Bukan tipe yang bilang "aku peduli sama kamu" tiap lima menit.
+                            Tapi tipe yang ada pas dibutuhin, yang inget hal-hal kecil, yang dengerin beneran.
+                        </p>
+
+                        <div class="about-highlight">
+                            <span class="accent-mark"></span>
+                            <h3>Konsisten & Stabil</h3>
+                        </div>
+                        <p>
+                            Orangnya? Ya gitu. Ada aja. Konsisten. Kayak wifi yang sinyal-nya stabil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Split Section (Personality & Fun Facts) -->
+        <div class="split-section">
+            <!-- Personality Section -->
+            <section id="personality" class="section personality">
+                <div class="container">
+                    <h2 class="section-title">Personality</h2>
+                    <div class="cards-grid animate-on-scroll">
+                        <div class="card">
+                            <h3>Caring</h3>
+                            <p>Peduli tanpa ngomong banyak. Tau kapan harus ada, tau kapan harus kasih space.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Konsisten</h3>
+                            <p>Ga moody-an. Stable kayak server premium. Jarang down, maintenance minim.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Low Drama</h3>
+                            <p>Anti ribet. Kalo ada masalah, selesaiin. Ga perlu bikin thread panjang.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Action > Words</h3>
+                            <p>Lebih nunjukin lewat tindakan. Chat singkat, tapi aksinya ngomong banyak.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fun Facts Section -->
+            <section id="funfacts" class="section funfacts">
+                <div class="container">
+                    <h2 class="section-title">Fun Facts</h2>
+                    <div class="facts-list animate-on-scroll">
+                        <div class="fact-item">
+                            <span class="fact-number">01</span>
+                            <div class="fact-content">
+                                <h4>Dry tapi niat</h4>
+                                <p>Chat-nya emang kering, tapi kalo lo baca baik-baik, ada usaha di situ.</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-number">02</span>
+                            <div class="fact-content">
+                                <h4>Bisa diem lama</h4>
+                                <p>Bukan berarti ga peduli. Kadang emang lagi sibuk. Kadang lagi mikir.</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-number">03</span>
+                            <div class="fact-content">
+                                <h4>Gerak pas dibutuhin</h4>
+                                <p>Kayak emergency service. Ga keliatan, tapi pas urgent, ada aja.</p>
+                            </div>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-number">04</span>
+                            <div class="fact-content">
+                                <h4>Humor receh tapi timing</h4>
+                                <p>Jokes-nya ga selalu lucu. Tapi timing-nya? *chef's kiss*</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Music Section -->
+        <section id="music" class="section music">
+            <div class="container">
+                <h2 class="section-title" style="text-align:center">List Top 5 Anjay Saka</h2>
+                <p class="section-subtitle">lagu-lagu yang vibes-nya Saka banget</p>
+
+                <div class="music-carousel-container">
+                    <button class="carousel-btn prev-btn" id="music-prev">❮</button>
+
+                    <div class="music-track-container">
+                        <div class="music-track" id="music-track">
+                            <!-- Song 1 -->
+                            <a href="https://youtu.be/08WiUcJmnZc?si=KHEqknrIhSHXcXCr" target="_blank"
+                                class="song-card animate-on-scroll" data-id="08WiUcJmnZc">
+                                <div class="thumbnail-wrapper">
+                                    <img src="https://img.youtube.com/vi/08WiUcJmnZc/hqdefault.jpg"
+                                        alt="Sweater Weather" loading="lazy" decoding="async" width="480" height="360">
+                                    <div class="play-overlay">▶</div>
+                                </div>
+                                <div class="song-info">
+                                    <h3>Sweater Weather</h3>
+                                    <p>The Neighbourhood</p>
+                                </div>
+                            </a>
+
+                            <!-- Song 2 -->
+                            <a href="https://youtu.be/EAivfIiUlNg?si=xw3LjqJ4xfZzEh-n" target="_blank"
+                                class="song-card animate-on-scroll" data-id="EAivfIiUlNg">
+                                <div class="thumbnail-wrapper">
+                                    <img src="https://img.youtube.com/vi/EAivfIiUlNg/hqdefault.jpg" alt="Ultraviolence"
+                                        loading="lazy" decoding="async" width="480" height="360">
+                                    <div class="play-overlay">▶</div>
+                                </div>
+                                <div class="song-info">
+                                    <h3>Ultraviolence</h3>
+                                    <p>Lana Del Rey</p>
+                                </div>
+                            </a>
+
+                            <!-- Song 3 -->
+                            <a href="https://youtu.be/hShnlkbsY-8?si=zZYFplrFiXMmYb4Y" target="_blank"
+                                class="song-card animate-on-scroll" data-id="hShnlkbsY-8">
+                                <div class="thumbnail-wrapper">
+                                    <img src="https://img.youtube.com/vi/hShnlkbsY-8/hqdefault.jpg" alt="Art Deco"
+                                        loading="lazy" decoding="async" width="480" height="360">
+                                    <div class="play-overlay">▶</div>
+                                </div>
+                                <div class="song-info">
+                                    <h3>Art Deco</h3>
+                                    <p>Lana Del Rey</p>
+                                </div>
+                            </a>
+
+                            <!-- Song 4 -->
+                            <a href="https://youtu.be/BZ-rLBkUZf4?si=PZAGiGseObbJW10V" target="_blank"
+                                class="song-card animate-on-scroll" data-id="BZ-rLBkUZf4">
+                                <div class="thumbnail-wrapper">
+                                    <img src="https://img.youtube.com/vi/BZ-rLBkUZf4/hqdefault.jpg" alt="All Too Well"
+                                        loading="lazy" decoding="async" width="480" height="360">
+                                    <div class="play-overlay">▶</div>
+                                </div>
+                                <div class="song-info">
+                                    <h3>All Too Well (10mv)</h3>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </a>
+
+                            <!-- Song 5 -->
+                            <a href="https://youtu.be/y9YsIuODGvg?si=ziqgDDfnD7XLis4s" target="_blank"
+                                class="song-card animate-on-scroll" data-id="y9YsIuODGvg">
+                                <div class="thumbnail-wrapper">
+                                    <img src="https://img.youtube.com/vi/y9YsIuODGvg/hqdefault.jpg" alt="White Ferrari"
+                                        loading="lazy" decoding="async" width="480" height="360">
+                                    <div class="play-overlay">▶</div>
+                                </div>
+                                <div class="song-info">
+                                    <h3>White Ferrari</h3>
+                                    <p>Frank Ocean</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn" id="music-next">❯</button>
+                </div>
+
+                <div id="music-msg-general" class="music-msg">
+                    Oke.<br>Playlist ini emang vibes-nya Saka banget.
+                </div>
+                <div id="music-msg-ferrari" class="music-msg">
+                    Yaelah… White Ferrari terakhir.<br>Ketauan.
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="section quotes">
+            <div class="container">
+                <h2 class="section-title">Quotes</h2>
+                <div class="quotes-grid animate-on-scroll">
+                    <blockquote class="quote-card">
+                        <p>"Ya."</p>
+                        <span class="quote-context">— Saka, merespons cerita panjang</span>
+                    </blockquote>
+                    <blockquote class="quote-card">
+                        <p>"Oke."</p>
+                        <span class="quote-context">— Saka, habis dikasih tau deadline</span>
+                    </blockquote>
+                    <blockquote class="quote-card" id="special-quote">
+                        <p id="special-quote-text">Saka itu biasa aja.</p>
+                        <span class="quote-context">— orang yang belum kenal</span>
+                    </blockquote>
+                    <blockquote class="quote-card">
+                        <p>"Hm."</p>
+                        <span class="quote-context">— Saka, lagi mikir</span>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- First Impression CTA Section -->
+        <section id="fi-cta" class="fi-cta-section">
+            <div class="container">
+                <div class="fi-cta-wrapper animate-on-scroll">
+                    <div class="fi-cta-intro">
+                        <h2>Pencet aja ntar juga tau</h2>
+                        <p>hehe</p>
+                    </div>
+                    <a href="first-impression-gallery.html" target="_blank" class="fi-cta-button">
+                        <div class="fi-cta-text">
+                            <span class="fi-cta-main">First Impression</span>
+                            <span class="fi-cta-sub">how they see you ~</span>
+                        </div>
+                        <span class="fi-cta-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <p class="footer-text">
+                    dibuat dengan niat oleh si keren Rei <span id="secret-dot" class="secret-dot">•</span> 2024
+                </p>
+                <p id="final-easter-egg" class="final-easter-egg">
+                    Lu baca sampe sini?<br>
+                    Iya, dia emang sepenting itu.
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
